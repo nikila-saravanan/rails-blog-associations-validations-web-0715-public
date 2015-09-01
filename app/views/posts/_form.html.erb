@@ -23,9 +23,7 @@
   </div>
 
   <div class="field">
-    <%#@tags.each do |each_tag| %>
-    <%= f.collection_check_boxes(:tag_ids,Tag.all,:id,:name) %><br>
-    <%#end %>
+    <%= f.collection_check_boxes :tag_ids,Tag.all,:id,:name %>
   </div>
 
   <div class="actions">
